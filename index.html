@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Apple Restaurant</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Vinyl&display=swap" rel="stylesheet">
+	<link href="phone.css" rel="stylesheet" media="screen and (max-width: 1170px)">
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+	<link rel="icon" href="/images/logo.jpg" type="image/x-icon">
+</head>
+<body>
+	<!---------------- navbar------------ -->
+	<nav id="navbar">
+		<div id="logo">
+			<img src="/images/logo.png" alt="mylogo">
+		</div>
+		<ul>
+			<li class="items"><a href="#">Home</a></li>
+			<li class="items"><a href="http://127.0.0.1:5555/#services">Services</a></li>
+			<li class="items"><a href="#">About Us</a></li>
+			<li class="items"><a href="http://127.0.0.1:5555/#contact">contact Us</a></li>
+			<li class="items"><a href="">Our Clients</a></li>
+		</ul>
+	</nav>
+	<!-- ----------------home---------------------- -->
+	<section id="home">
+		<h1 class="h-primary" id="head1">Welcome to Apple Restaurant</h1>
+		<p id="intro1">Apple restaurant with a superb interior and elegant ambience, If you love appams, stews and fish curryOur Restaurant should definitely
+			be in your to-do list when in Gurgaon. </p>
+		<p id="intro2"> Inspired by French haute cuisine, the restaurant is a new
+			experience as far as taste is concerned, under the guidance of Chef Pierre Hermé.</p>
+		<button class="btn"><a href="#" target="_parent" id="orderbtn" onclick="setTimeout(order, 1000)">order now!</a></button>
+		<p id="orderconf"></p>
+	</section>
+
+	<section class="services-container">
+		<h1 class="h-primary centre">Our Services</h1>
+		<div id="services">
+			<div class="box">
+				<img src="/images/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="">
+				<h2 class="h-secondary centre">Food Ordering</h2>
+				<p class="centre">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem distinctio minima
+					impedit vel?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis explicabo repellat eaque
+					officia enim at voluptatibus quia sequi, quo qui.</p>
+			</div>
+			<div class="box">
+				<img src="/images/victoria-shes-UC0HZdUitWY-unsplash.jpg" alt="">
+				<h2 class="h-secondary centre">Food Catering</h2>
+				<p class="centre">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem distinctio minima
+					impedit vel? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio voluptatem nostrum
+					exercitationem atque consequuntur dolor necessitatibus consectetur ipsam reiciendis tempore!</p>
+			</div>
+			<div class="box">
+				<img src="/images/lily-banse--YHSwy6uqvk-unsplash.jpg" alt="">
+				<h2 class="h-secondary centre">Bulk ordering</h2>
+				<p class="centre">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Autem distinctio minima
+					impedit vel? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio cupiditate laborum
+					inventore tenetur. Architecto possimus cumque facilis, repellat ea at!</p>
+			</div>
+	</section>
+	<!-- --------------------------client------------------------ -->
+	<section id="client-section">
+		<h1 class="h-primary centre">Our clients</h1>
+		<div id="clients">
+			<div class="client-item">
+				<img src="/images/facebook-removebg-preview.png" alt="clients" width="100px" height="100px">
+				<img src="/images/google-removebg-preview.png" alt="clients" width="100px" height="100px">
+				<img src="/images/Amazon-removebg-preview.png" alt="clients" width="100px" height="100px">
+				<img src="/images/company1.jpg" alt="clients" width="100px" height="100px">
+				<img src="/images/company3.png" alt="clients" width="100px" height="100px">
+				<img src="/images/line-art-house-roof-and-buildings-4485ld.png" alt="clients" width="100px"	height="100px">
+				<img src="/images/images.pngcompany2.png" alt="clients" width="100px" height="100px">
+				<img src="/images/2.jpg" alt="clients" width="100px" height="100px">
+				<img src="/images/3.png" alt="clients" width="100px" height="100px">
+				<img src="/images/4.jpg" alt="clients" width="100px" height="100px">
+				<img src="/images/5.jpg" alt="clients" width="100px" height="100px">
+				<img src="/images/6.png" alt="clients" width="100px" height="100px">
+			</div>
+		</div>
+	</section>
+	<!-- -----------------------------------contact---------------------- -->
+	<section id="contact">
+		<h1 class="h-primary center">Contact Us</h1>
+		<div id="contact-box">
+			<!-- <video src="bgvideo.mp4" type="video/mp4" id="myvideo" autoplay muted loop></video> -->
+			<form action="">
+				<div class="form-group">
+					<label for="Name">Name:</label>
+					<input type="text" name="name" id="Name" placeholder="enter your name">
+				</div>
+
+				<div class="form-group">
+					<label for="Email">E-mail:</label>
+					<input type="email" name="name" id="Email" placeholder="enter your e-mail">
+				</div>
+
+				<div class="form-group">
+					<label for="Number">Phone:</label>
+					<input type="phone" name="name" id="Number" placeholder="enter your number">
+				</div>
+
+				<div class="form-group">
+					<label for="Message">Message:</label>
+					<textarea name="message" id="message" cols="29" rows="10"></textarea>
+				</div>
+			</form>
+			<button class="btn1 centre" onclick="myFunction()">Submit</button>
+			<p id="dialog"></p>
+			
+		</div>
+	</section>
+	<!---------------------------------footer---------------------------- -->
+
+	<footer>
+		<div class="center">
+			copyright &copy; www.applerestaurent.com. All Rights Reserved.
+		</div>
+	</footer>
+
+	<script src="script.js"></script>
+</body>
+
+</html>
